@@ -1,5 +1,6 @@
 node {
-  stage('List workspace') {
+  stage('Checkout') {
+    checkout scm
     bat 'dir'
   }
 
